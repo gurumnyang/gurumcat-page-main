@@ -1,0 +1,9 @@
+name = "gurumcat-worker"
+type = "javascript"
+account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+workers_dev = true
+compatibility_date = "2025-07-25"
+
+[site]
+bucket = "./.next"
+entry-point = "."
