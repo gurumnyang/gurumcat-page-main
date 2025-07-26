@@ -1,9 +1,3 @@
 name = "gurumcat-page"
-type = "javascript"
-account_id = "d70547c7f76c990067ddb9f7d3d4dff3"
-workers_dev = true
 compatibility_date = "2025-07-25"
-
-[site]
-bucket = "./.next"
-entry-point = "."
+pages_build_output_dir = ".next"
