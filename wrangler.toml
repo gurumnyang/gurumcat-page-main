@@ -1,6 +1,6 @@
-name = "gurumcat-worker"
+name = "gurumcat-page"
 type = "javascript"
-account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+account_id = "d70547c7f76c990067ddb9f7d3d4dff3"
 workers_dev = true
 compatibility_date = "2025-07-25"
 

@@ -1,12 +1,12 @@
 {
-  "name": "gurumcat-worker-main",
+  "name": "gurumcat-page-main",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "deploy": "wrangler pages deploy .next --project-name=gurumcat-worker",
+    "deploy": "wrangler pages deploy .next --project-name=gurumcat-page",
     "lint": "next lint"
   },
   "dependencies": {
