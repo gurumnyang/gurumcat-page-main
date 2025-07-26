@@ -237,12 +237,38 @@ export default function Home() {
                   </div>
                   
                   <div className="flex items-center">
-                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center mr-4">
                       <span className="text-white">🐙</span>
                     </div>
                     <div>
                       <p className="font-medium text-slate-800 dark:text-white">GitHub</p>
-                      <p className="text-slate-600 dark:text-slate-300">github.com/gurumnyang</p>
+                      <a href="https://github.com/gurumnyang?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        github.com/gurumnyang
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-white">💬</span>
+                    </div>
+                    <div>
+                      <p className="font-medium text-slate-800 dark:text-white">Discord 서버</p>
+                      <a href="https://discord.gg/M5BkpzThwD" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 hover:underline">
+                        discord.gg/M5BkpzThwD
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-white">🤖</span>
+                    </div>
+                    <div>
+                      <p className="font-medium text-slate-800 dark:text-white">ChatGPT 갤러리</p>
+                      <a href="https://gall.dcinside.com/mgallery/board/lists?id=chatgpt" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 hover:underline">
+                        ChatGPT 마갤 (주딱)
+                      </a>
                     </div>
                   </div>
                   
