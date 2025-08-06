@@ -12,10 +12,10 @@ export default function Home() {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">gurum.cat</span>
           </a>
           <div className="hidden sm:flex gap-6 items-center">
-            <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
-            <a href="#skills" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
-            <a href="#projects" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
-            <a href="#contact" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+            <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">소개</a>
+            <a href="#skills" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">기술</a>
+            <a href="#projects" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">프로젝트</a>
+            <a href="#contact" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">연락처</a>
             {/* Dark mode toggle (prefers-color-scheme 활용) */}
             <button
               aria-label="Toggle theme"
@@ -105,34 +105,14 @@ export default function Home() {
             <p className="text-lg text-slate-600 dark:text-slate-300">저에 대해 더 알아보세요</p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-semibold text-slate-800 dark:text-white mb-6">소개</h3>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                diepAPI, Youtube.js 등에 기여하고 있으며, dcinside.js를 개발하였습니다. 또한 2025년부터 디시인사이드 ChatGPT 마이너 갤러리 2대 주딱으로 활동하고 있습니다.
-                
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-2xl font-semibold text-slate-800 dark:text-white mb-6">소개</h3>
+            <div className="prose prose-slate dark:prose-invert max-w-none leading-relaxed text-slate-600 dark:text-slate-300">
+              <p>
+                오픈소스 개발과 커뮤니티 운영을 병행하고 있습니다. <strong>dcinside.js</strong>를 개발했고
+                <strong> diepAPI</strong>, <strong>Youtube.js</strong> 등에 기여했으며, 2025년부터는 디시인사이드 <strong>ChatGPT 마이너 갤러리</strong>에서 활동하고 있습니다.
+                또한 <strong>3D 모델링</strong> 작업도 병행하고 있으며, <strong>Blender</strong>를 사용하여 다양한 모델을 제작하고 있습니다.
               </p>
-            </div>
-            <div className="bg-white/70 dark:bg-slate-800/70 p-8 rounded-2xl shadow-lg ring-1 ring-inset ring-slate-200/60 dark:ring-slate-700/50">
-              <h4 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">핵심 가치</h4>
-              <ul className="space-y-3">
-                <li className="flex items-center text-slate-600 dark:text-slate-300">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  사용자 경험 최우선
-                </li>
-                <li className="flex items-center text-slate-600 dark:text-slate-300">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  깔끔하고 읽기 쉬운 코드
-                </li>
-                <li className="flex items-center text-slate-600 dark:text-slate-300">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  지속적인 학습과 성장
-                </li>
-                <li className="flex items-center text-slate-600 dark:text-slate-300">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  팀워크와 소통
-                </li>
-              </ul>
             </div>
           </div>
         </section>
