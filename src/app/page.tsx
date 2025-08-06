@@ -3,21 +3,11 @@
 import Image from "next/image";
 
 export default function Home() {
-  // 초기 테마 적용 (FOUT 방지)
-  if (typeof window !== 'undefined') {
-    try {
-      const saved = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = saved ? saved === 'dark' : prefersDark;
-      document.documentElement.classList.toggle('dark', isDark);
-    } catch {}
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 selection:bg-blue-200/50 dark:selection:bg-blue-700/40">
       {/* Header */}
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/40 border-b border-slate-200/60 dark:border-slate-700/50">
-        <nav className="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
+        <nav aria-label="주요" role="navigation" className="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
           <a href="#top" className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white hover:opacity-90 transition-opacity">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">gurum.cat</span>
           </a>
@@ -47,7 +37,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <main id="top" className="container mx-auto max-w-6xl px-6">
-        <section className="relative text-center py-24 sm:py-28">
+        <section className="relative text-center py-24 sm:py-28" id="main">
           {/* Aura background */}
           <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
             <div className="absolute left-1/2 top-10 -translate-x-1/2 h-64 w-64 sm:h-96 sm:w-96 rounded-full bg-blue-500/20 blur-3xl"></div>
